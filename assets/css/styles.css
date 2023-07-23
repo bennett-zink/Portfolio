@@ -15,17 +15,30 @@
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
-    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --text-color: hsl(var(--hue-color), 8%, 35%);
+    --text-color-light: hsl(var(--hue-color), 8%, 55%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
+    /* --first-color: #86B988;
+    --first-color-second: #86B988;
+    --first-color-alt: #99A481;
+    --first-color-lighter: #C8D1B3;
+    --title-color: #1a1a1a;
+    --text-color: #2B2B2B;
+    --text-color-light: #3c3c3c;
+    --input-color: #F1F3EC;
+    --body-color: #FDFDFC;
+    --container-color: #fff;
+    --scroll-bar-color: #F1F3EC;
+    --scroll-thumb-color: #99A481; */
+
+
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
-
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
@@ -80,6 +93,16 @@ body.dark-theme{
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+
+  /* --first-color-second: #86B988;
+  --title-color: #C8D1B3;
+  --text-color: #FDFDFC;
+  --input-color:#3c3c3c;
+  --body-color: #1a1a1a;
+  --container-color: black;
+  --scroll-bar-color: #1a1a1a;
+  --scroll-thumb-color: #3c3c3c; */
+
 }
 
 /*========== Button Dark/Light ==========*/
@@ -424,8 +447,12 @@ img {
 }
 
 .about__buttons{
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
+}
+
+.about__links{
+  color: var(--first-color);
 }
 
 /*==================== SKILLS ====================*/
@@ -694,8 +721,9 @@ img {
 .footer__copy{
   font: var(--smaller-font-size);
   text-align: center;
-  color: var(--first-color-light);
+  color: var(--body-color);
   margin-top: var(--mb-3);
+  font-size: x-small;
 }
 
 .footer__title,
@@ -816,7 +844,7 @@ img {
       grid-column: initial;
   }
   .home__img{
-      order: 1;
+      order: 0;
       justify-self: center;
   }
 
@@ -1022,3 +1050,8 @@ img {
       grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+
+
+
