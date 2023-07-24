@@ -10,7 +10,7 @@
     --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
+    /* --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -21,9 +21,9 @@
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%); */
 
-    /* --first-color: #86B988;
+    --first-color: #86B988;
     --first-color-second: #86B988;
     --first-color-alt: #99A481;
     --first-color-lighter: #C8D1B3;
@@ -34,7 +34,7 @@
     --body-color: #FDFDFC;
     --container-color: #fff;
     --scroll-bar-color: #F1F3EC;
-    --scroll-thumb-color: #99A481; */
+    --scroll-thumb-color: #99A481;
 
 
     /*========== Font and typography ==========*/
@@ -85,23 +85,24 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
   /* HSL color mode */
-  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  /* --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
   --body-color: hsl(var(--hue-color), 28%, 12%);
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%); */
 
-  /* --first-color-second: #86B988;
-  --title-color: #C8D1B3;
-  --text-color: #FDFDFC;
+  --first-color-second: #86B988;
+  --title-color: #86B988;
+  --text-color: #d6d2d2;
   --input-color:#3c3c3c;
   --body-color: #1a1a1a;
+  --text-color-light: #bebbbb;
   --container-color: black;
   --scroll-bar-color: #1a1a1a;
-  --scroll-thumb-color: #3c3c3c; */
+  --scroll-thumb-color: #3c3c3c;
 
 }
 
