@@ -522,7 +522,11 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html{
+.skills__cpp{
+  width: 100%;
+}
+
+.skills__html, .skills__c, .skills__matlab, .skills__figma{
   width: 90%;
 }
 
@@ -530,13 +534,27 @@ img {
   width: 80%;
 }
 
+.skills__python, .skills__r{
+  width: 70%;
+}
+
 .skills__js{
   width: 65%;
 }
 
-.skills__react{
-  width: 85%;
+.skills__java, .skills__ill{
+  width: 60%;
 }
+
+.skills__ps{
+  width: 50%;
+}
+
+.skills__react{
+  width: 50%;
+}
+
+
 
 .skills__close .skills__list{
   height: 0;
