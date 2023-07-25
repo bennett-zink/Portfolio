@@ -636,7 +636,7 @@ img {
   margin-bottom: var(--mb-3);
 }
 
-.about__data{
+.all__projects-data{
   display: flex;
   justify-content: center;
 }
