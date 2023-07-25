@@ -344,7 +344,6 @@ img {
   font-size: 7rem;
 }
 
-
 .home__subtitle{
   font-size: var(--h3-font-size);
   color: var(--text-color);
@@ -554,8 +553,6 @@ img {
   width: 50%;
 }
 
-
-
 .skills__close .skills__list{
   height: 0;
   overflow: hidden;
@@ -569,16 +566,6 @@ img {
 .skills__open .skills__arrow{
   transform: rotate(-180deg);
 }
-
-
-/*==================== QUALIFICATION ====================*/
-
-
-/*==================== SERVICES ====================*/
-
-
-/* Active Modal */
-
 
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
@@ -639,12 +626,6 @@ img {
 .swiper-pagination-bullet{
   outline: none;
 }
-
-/*==================== PROJECT IN MIND ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
 
 /*==================== CONTACT ME ====================*/
 .contact__container{
@@ -834,23 +815,6 @@ img {
   .project__img{
       width: 200px;
   }
-/*============= This is not implemented now ===============*/
-  /*.testimonial__data,*/
-  /*.testimonial__header{*/
-  /*    flex-direction: column;*/
-  /*    align-items: center;*/
-  /*}*/
-
-  /*.testimonial__img{*/
-  /*    margin-right: 0;*/
-  /*    margin-bottom: var(--mb-0-25);*/
-  /*}*/
-
-  /*.testimonial__data,*/
-  /*.testimonial__description{*/
-  /*    text-align: center;*/
-  /*}*/
-
 }
 
 /* For medium devices */
