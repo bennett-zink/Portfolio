@@ -307,7 +307,7 @@ img {
 }
 
 .home__content{
-  grid-template-columns: .5fr 3fr;
+  grid-template-columns: 3fr 1fr;
   padding-top: 3.5rem;
   align-items: center;
 }
@@ -627,6 +627,54 @@ img {
   outline: none;
 }
 
+/*==================== All PROJECTS ====================*/
+
+.all__projects-title{
+  text-align: center;
+  display: block;
+  font-size: var(--font-medium);
+  margin-bottom: var(--mb-3);
+}
+
+.about__data{
+  display: flex;
+  justify-content: center;
+}
+
+.all__projects-description{
+  margin-top: var(--mb-0-75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all__projects-row{
+  display: flex;
+  width: 20%;
+  border: 1px var(--title-color);
+  border-style: solid none;
+  align-self: flex-end;
+
+}
+
+.all__projects-info{
+  text-align: center;
+  margin: auto;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color)
+}
+
+.all__projects-plus{
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.hidden{
+  height: 0;
+  overflow: hidden;
+}
+
 /*==================== CONTACT ME ====================*/
 .contact__container{
   row-gap: 3rem;
@@ -833,7 +881,8 @@ img {
   .about__container,
   .portfolio__content,
   .project__container,
-  .footer__container{
+  .footer__container,
+  .all__projects-container{
       grid-template-columns: repeat(2, 1fr);
   }
 
@@ -911,7 +960,7 @@ img {
       margin-left: 3rem;
   }
 
-  .about__container{
+  .about__container, .all__projects-container{
       column-gap: 5rem;
   }
   .about__img{

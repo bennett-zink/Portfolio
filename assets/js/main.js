@@ -135,3 +135,20 @@ themeButton.addEventListener('click', () => {
 })
 
 
+/*==================== Project Description ====================*/
+document.getElementById('plus').addEventListener('click', () => {
+    document.getElementById('description').classList.toggle('hidden');
+  }, false);
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const rotatingDiv = document.getElementById('plus');
+    let rotationDegree = 0;
+  
+    rotatingDiv.addEventListener('click', function() {
+      // Increment the rotation degree by 45 degrees on each click
+      rotationDegree += 180;
+      
+      // Apply the new rotation to the div
+      rotatingDiv.style.transform = `rotate(${rotationDegree}deg)`;
+    });
+  });
