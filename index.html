@@ -463,28 +463,34 @@
 
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <!--FORM-->
+                    <form action="https://formsubmit.co/bennettezink@gmail.com" method="POST" class="contact__form grid" >
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" class="contact__input" name="name" required>
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <input type="email" class="contact__input" name="email" required>
                             </div>
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <textarea name="message" cols="0" rows="7" class="contact__input" required></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
+                            <button type="submit" class="button button--flex">
                                 Send Message <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
+
+                        <input type="hidden" name="_next" value="#home">
+                        <input type="hidden" name="_captcha" value="false">
+
+
                     </form>
 
                 </div>

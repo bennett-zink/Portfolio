@@ -680,7 +680,7 @@ img {
 }
 
 .project__container-p:hover{
-  box-shadow: 0 -1px 6px rgba(124,174,125,.25);
+  box-shadow: 0 -1px 6px rgba(0,0,0,.2);
 }
 
 .project__demo{
@@ -689,6 +689,7 @@ img {
 }
 
 .demo-link{
+  display: inline-block;
   transition: transform 0.4s;
 }
 
