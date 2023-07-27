@@ -100,7 +100,7 @@ body.dark-theme{
   --input-color:#3c3c3c;
   --body-color: #1a1a1a;
   --text-color-light: #bebbbb;
-  --container-color: black;
+  --container-color: #242424;
   --scroll-bar-color: #1a1a1a;
   --scroll-thumb-color: #3c3c3c;
 
@@ -625,7 +625,7 @@ img {
 
 .section__title-project{
   font-size: var(--h1-font-size);
-  color: var(--container-color);
+  color: var(--title-color);
   text-align: center;
 }
 
@@ -634,13 +634,13 @@ img {
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
   text-align: center;
-  color: var(--container-color);
+  color: var(--text-color);
 }
 
 .project__description{
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--container-color)
+  color: var(--text-color)
 }
 
 .portfolio__button{
@@ -669,7 +669,7 @@ img {
   margin-top: 1rem;
   width: 60%;
   grid-template-columns: repeat(2, 1fr);
-  background-color: var(--first-color-second);
+  background-color: var(--container-color);
   border-radius: 1rem;
   padding: 3rem 2.5rem 0;
   grid-template-columns: 1fr max-content;
@@ -680,16 +680,24 @@ img {
 }
 
 .project__container-p:hover{
-  box-shadow: 0 -1px 6px rgba(0,0,0,.3);
+  box-shadow: 0 -1px 6px rgba(124,174,125,.25);
 }
 
 .project__demo{
-  font-size: var(--medium-font-size);
-  color: var(--container-color);
+  font-size: var(--font-medium);
+  color: var(--first-color-second);
+}
+
+.demo-link{
+  transition: transform 0.4s;
+}
+
+.demo-link:hover{
+  transform: translateX(.25rem);
 }
 
 .project__img-des{
-  color: var(--container-color);
+  color: var(--text-color);
   font-size: var(--small-font-size);
   padding-top: .5rem;
 }
