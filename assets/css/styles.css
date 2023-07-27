@@ -23,8 +23,8 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%); */
 
-    --first-color: #86B988;
-    --first-color-second: #86B988;
+    --first-color: #7cae7d;
+    --first-color-second: #7cae7d;
     --first-color-alt: #99A481;
     --first-color-lighter: #C8D1B3;
     --title-color: #1a1a1a;
@@ -639,7 +639,8 @@ img {
 
 .project__description{
   text-align: center;
-
+  margin-bottom: 2rem;
+  color: var(--container-color)
 }
 
 .portfolio__button{
@@ -649,13 +650,19 @@ img {
 
 .project__img-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto; 
   gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
 .project__img{
-  width: 350px;
+  margin-top: 2rem;
+  width: 500px;
   height: auto;
+  border-radius: 15px;
 }
 
 .project__container-p{
@@ -667,6 +674,24 @@ img {
   padding: 3rem 2.5rem 0;
   grid-template-columns: 1fr max-content;
   column-gap: 3rem;
+  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+  transition: box-shadow 0.25s;
+  padding-bottom: 4rem;
+}
+
+.project__container-p:hover{
+  box-shadow: 0 -1px 6px rgba(0,0,0,.3);
+}
+
+.project__demo{
+  font-size: var(--medium-font-size);
+  color: var(--container-color);
+}
+
+.project__img-des{
+  color: var(--container-color);
+  font-size: var(--small-font-size);
+  padding-top: .5rem;
 }
 
 
