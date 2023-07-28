@@ -667,7 +667,7 @@ img {
 
 .project__container-p{
   margin-top: 1rem;
-  width: 60%;
+  width: 70%;
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--container-color);
   border-radius: 1rem;
@@ -702,7 +702,6 @@ img {
   font-size: var(--small-font-size);
   padding-top: .5rem;
 }
-
 
 /*==================== CONTACT ME ====================*/
 .contact__container{
@@ -750,6 +749,13 @@ img {
   border: none;
   outline: none;
   padding: .25rem .5rem .5rem 0;
+}
+
+.submit-button{
+  border: none;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: var(--font-medium);
 }
 
 /*==================== FOOTER ====================*/
@@ -849,7 +855,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 568px){
   .container{
       margin-left: var(--mb-1);
       margin-right: var(--mb-1);
@@ -869,6 +875,25 @@ img {
   .home__blob{
       width: 180px;
   }
+
+  .home__title{
+    font-size: 4rem;
+  }
+
+  .home__data{
+    text-align: center;
+  }
+
+  .home__social{
+    height: 0;
+    overflow: hidden;
+  }
+
+  .home__img{
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+ }
 
   .skills__title{
       font-size: var(--normal-font-size);
@@ -891,6 +916,14 @@ img {
 
   .project__img{
       width: 200px;
+  }
+
+  .all__projects-row{
+    width: 70%;
+  }
+
+  .project__container-p{
+    width: 90%;
   }
 }
 
