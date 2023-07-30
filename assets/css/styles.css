@@ -730,6 +730,7 @@ img {
 .contact__title{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+  text-align: center;
 }
 
 .contact__subtitle{
@@ -921,8 +922,13 @@ img {
       justify-content: center;
   }
   .services__content{
-      padding-right: 3.5rem;
+    padding-right: 3.5rem;
   }
+
+  .skills__list{
+    padding-left: 0;
+  }
+
   .services__modal{
       padding: 0 .5rem;
   }
@@ -938,6 +944,14 @@ img {
   .project__container-p{
     width: 90%;
   }
+
+  .contact__align{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 2.75rem;
+  }
+
+ 
 }
 
 /* For medium devices */
