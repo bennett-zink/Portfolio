@@ -33,8 +33,8 @@
     --input-color: #F1F3EC;
     --body-color: #FDFDFC;
     --container-color: #fff;
-    --scroll-bar-color: #F1F3EC;
-    --scroll-thumb-color: #99A481;
+    --scroll-bar-color: #FDFDFC;
+    --scroll-thumb-color: #7cae7d;
 
 
     /*========== Font and typography ==========*/
@@ -96,6 +96,7 @@ body.dark-theme{
 
   --first-color-second: #86B988;
   --title-color: #86B988;
+  --first-color-lighter: #d4ddbf;
   --text-color: #d6d2d2;
   --input-color:#3c3c3c;
   --body-color: #1a1a1a;
@@ -713,10 +714,17 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.contact__align{
+  display: flex;
+  column-gap: 6rem;
+  justify-content: center;
+}
+
 .contact__icon{
   font-size: 2rem;
   color: var(--first-color);
   margin-right: var(--mb-0-75);
+  cursor: pointer;
 }
 
 .contact__title{
@@ -770,6 +778,11 @@ img {
 .footer__bg{
   background-color: var(--first-color-second);
   padding: 2rem 0 3rem;
+}
+
+.footer__title-c{
+  position:relative;
+  top:-.5rem;
 }
 
 .footer__title{
