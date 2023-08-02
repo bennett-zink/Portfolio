@@ -154,7 +154,7 @@ document.getElementById('plus').addEventListener('click', () => {
   });
 
   document.getElementById('plus2').addEventListener('click', () => {
-    document.getElementById('description2').classList.toggle('hidden');
+    document.getElementById('description2').classList.toggle('hidden2');
   }, false);
 
   document.addEventListener('DOMContentLoaded', function() {
