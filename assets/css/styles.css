@@ -666,6 +666,12 @@ img {
   border-radius: 15px;
 }
 
+.project__img-norounding{
+  margin-top: 2rem;
+  width: 500px;
+  height: auto;
+}
+
 .project__container-p{
   margin-top: 1rem;
   width: 70%;
@@ -702,6 +708,12 @@ img {
   color: var(--text-color);
   font-size: var(--small-font-size);
   padding-top: .5rem;
+}
+
+.project__honor-code{
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  padding-top: 2rem;
 }
 
 /*==================== CONTACT ME ====================*/
