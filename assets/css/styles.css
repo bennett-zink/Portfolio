@@ -526,15 +526,15 @@ img {
   width: 100%;
 }
 
-.skills__html, .skills__c, .skills__matlab, .skills__figma{
+.skills__html, .skills__c, .skills__matlab, .skills__figma, .skills__python{
   width: 90%;
 }
 
-.skills__css{
+.skills__css, .skills__ill{
   width: 80%;
 }
 
-.skills__python, .skills__r{
+.skills__r, .skills__sql, .skills__django, .skills__ps{
   width: 70%;
 }
 
@@ -542,12 +542,8 @@ img {
   width: 65%;
 }
 
-.skills__java, .skills__ill{
+.skills__flask{
   width: 60%;
-}
-
-.skills__ps{
-  width: 50%;
 }
 
 .skills__react{
