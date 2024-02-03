@@ -615,12 +615,7 @@ img {
   transition: transform 0.5s ease;
 }
 
-.hidden{
-  height: 0;
-  overflow: hidden;
-}
-
-.hidden2{
+.hidden,.hidden2, .hidden3{
   height: 0;
   overflow: hidden;
 }
@@ -715,6 +710,24 @@ img {
   color: var(--text-color);
   font-size: var(--small-font-size);
   padding-top: 2rem;
+}
+
+.project-img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-img-group-sm {
+  text-align: center;
+}
+
+.project__img-two {
+  width: 75%;
+  max-height: 100vh;
+  border: .25px solid #000;
+  margin-top: 2rem;
+  border-radius: 15px;
 }
 
 /*==================== CONTACT ME ====================*/
