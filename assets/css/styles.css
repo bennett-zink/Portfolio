@@ -615,7 +615,7 @@ img {
   transition: transform 0.5s ease;
 }
 
-.hidden,.hidden2, .hidden3{
+.hidden,.hidden2, .hidden3, .hidden4, .hidden5, .hidden6{
   height: 0;
   overflow: hidden;
 }
@@ -1197,8 +1197,63 @@ img {
   }
 }
 
+/* New Projects Section  */
 
+        /* --first-color: #7cae7d;
+        --first-color-second: #7cae7d;
+        --first-color-alt: #99A481;
+        --first-color-lighter: #C8D1B3;
+        --title-color: #1a1a1a;
+        --text-color: #2B2B2B;
+        --text-color-light: #3c3c3c;
+        --input-color: #F1F3EC;
+        --body-color: #FDFDFC;
+        --container-color: #fff;
+        --scroll-bar-color: #FDFDFC;
+        --scroll-thumb-color: #7cae7d; */
 
+.thumbnail-container {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
+.thumbnail-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+}
 
+.thumbnail {
+  flex: 0 0 calc(33.33% - 20px);
+  text-align: center;
+}
+
+.thumbnail p {
+  margin-bottom: 10px;
+}
+
+.thumbnail-image {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 75%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbnail-image:hover {
+  transform: scale(1.025);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 4px;
+}
 

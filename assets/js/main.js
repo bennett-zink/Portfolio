@@ -136,53 +136,39 @@ themeButton.addEventListener('click', () => {
 
 
 /*==================== Project Description ====================*/
-document.getElementById('plus').addEventListener('click', () => {
-    document.getElementById('description').classList.toggle('hidden');
-  }, false);
+document.addEventListener('DOMContentLoaded', function() {
+  let currentVisibleDescription = null;
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const rotatingDiv = document.getElementById('plus');
-    let rotationDegree = 0;
-  
-    rotatingDiv.addEventListener('click', function() {
-      // Increment the rotation degree by 45 degrees on each click
-      rotationDegree += 180;
-      
-      // Apply the new rotation to the div
-      rotatingDiv.style.transform = `rotate(${rotationDegree}deg)`;
+  function setupToggle(buttonId, descriptionId, hiddenClass) {
+    const button = document.getElementById(buttonId);
+    const description = document.getElementById(descriptionId);
+
+    button.addEventListener('click', function() {
+      // Hide the currently visible description if it's not the one being clicked
+      if (currentVisibleDescription && currentVisibleDescription !== description) {
+        currentVisibleDescription.classList.add(hiddenClass);
+      }
+
+      // Toggle the clicked description
+      const isHidden = description.classList.contains(hiddenClass);
+      description.classList.toggle(hiddenClass);
+
+      // Update the current visible description only if the description is being shown
+      if (isHidden) {
+        currentVisibleDescription = description;
+      } else if (currentVisibleDescription === description) {
+        currentVisibleDescription = null;
+      }
     });
-  });
+  }
 
-document.getElementById('plus2').addEventListener('click', () => {
-    document.getElementById('description2').classList.toggle('hidden2');
-  }, false);
+  setupToggle('plus', 'description', 'hidden');
+  setupToggle('plus2', 'description2', 'hidden2');
+  setupToggle('plus3', 'description3', 'hidden3');
+  setupToggle('plus4', 'description4', 'hidden4');
+  setupToggle('plus5', 'description5', 'hidden5');
+  setupToggle('plus6', 'description6', 'hidden6');
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const rotatingDiv = document.getElementById('plus2');
-    let rotationDegree = 0;
-  
-    rotatingDiv.addEventListener('click', function() {
-      // Increment the rotation degree by 45 degrees on each click
-      rotationDegree += 180;
-      
-      // Apply the new rotation to the div
-      rotatingDiv.style.transform = `rotate(${rotationDegree}deg)`;
-    });
-  });
+});
 
-document.getElementById('plus3').addEventListener('click', () => {
-    document.getElementById('description3').classList.toggle('hidden3');
-  }, false);
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const rotatingDiv = document.getElementById('plus3');
-    let rotationDegree = 0;
-  
-    rotatingDiv.addEventListener('click', function() {
-      // Increment the rotation degree by 45 degrees on each click
-      rotationDegree += 180;
-      
-      // Apply the new rotation to the div
-      rotatingDiv.style.transform = `rotate(${rotationDegree}deg)`;
-    });
-  });
