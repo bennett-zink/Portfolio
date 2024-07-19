@@ -578,7 +578,6 @@ img {
 }
 
 .all__projects-description{
-  margin-top: var(--mb-0-75);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -668,7 +667,6 @@ img {
 }
 
 .project__container-p{
-  margin-top: 1rem;
   width: 70%;
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--container-color);
@@ -678,7 +676,8 @@ img {
   column-gap: 3rem;
   box-shadow: 0 -1px 4px rgba(0,0,0,.15);
   transition: box-shadow 0.25s;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .project__container-p:hover{
