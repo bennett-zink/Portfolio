@@ -721,11 +721,17 @@ img {
 }
 
 .project__img-two {
-  width: 75%;
+  width: 90%;
   max-height: 100vh;
-  border: .25px solid #000;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+  transition: box-shadow 0.25s;
   margin-top: 2rem;
   border-radius: 15px;
+  cursor: pointer;
+}
+
+.project__img-two:hover{
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, .2);
 }
 
 /*==================== CONTACT ME ====================*/
