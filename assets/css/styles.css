@@ -522,11 +522,11 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__cpp, .skills__html{
+.skills__html, .skills__python{
   width: 100%;
 }
 
-.skills__c, .skills__matlab, .skills__figma, .skills__python, .skills__css{
+.skills__c, .skills__matlab, .skills__figma, .skills__css, .skills__cpp{
   width: 90%;
 }
 
