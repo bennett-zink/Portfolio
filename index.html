@@ -32,6 +32,8 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Bennett Zink</title>
+
+        <script type="text/javascript" src="../assets/js/processing.js"></script>
     </head>
 
     <body>
@@ -94,9 +96,8 @@
 
                         <div class="home__data">
                             <h1 class="home__title">Bennett Zink</h1>
-
+                            <!-- <div class="border-box"></div> -->
                         </div>
-                        <!-- <img src="assets/img/me.JPG" alt="" class="home__img"> -->
 
 
                     </div>
@@ -122,32 +123,67 @@
                 <div class="thumbnail-container">
                     <div class="thumbnail-grid">
                         <div class="thumbnail" id="plus">
+                            <p class="all__projects-info">Hazard Dashboard</p>
+                            <div class="thumbnail-image">
+                                <img src="../assets/img/risk-thumb.png" alt="Thumbnail 3">
+                            </div>
+                        </div>
+                        <div class="thumbnail" id="plus2">
                             <p class="all__projects-info">Search Engine</p>
                             <div class="thumbnail-image">
                                 <img src="../assets/img/se-thumb2.png" alt="search engine thumbnail">
                             </div>
                         </div>
-                        <div class="thumbnail" id="plus2">
+                        <div class="thumbnail" id="plus3">
                             <p class="all__projects-info">Instagram Clone</p>
                             <div class="thumbnail-image">
                                 <img src="../assets/img/insta-thumb2.png" alt="Thumbnail 2">
                             </div>
                         </div>
-                        <div class="thumbnail" id="plus3">
-                            <p class="all__projects-info">Running Weather Calculator</p>
-                            <div class="thumbnail-image">
-                                <img src="../assets/img/weather-thumb.png" alt="Thumbnail 3">
+                    </div>
+                </div>
+
+                <!--==================== Hazard Dashboard ====================-->
+
+                <div class="all__projects-description hidden" id="description">
+                    <div class="project__container-p">
+                        <h2 class="section__title-project">Hazard Dashboard</h2>
+                        <span class="section__subtitle-project">React • Tailwind CSS • Python • SQL</span>
+                        <p class="project__description">As the capstone for a human centered design course I worked with a team to develop a
+                            risk dashboard that visualizes disaster, crime, and weather data for U.S. counties by integrating real-time and historical data
+                            from sources like OpenFEMA, the FBI, and the NWS. I built a backend REST API to aggregate and serve data,
+                            and a responsive React frontend that displays interactive maps, charts, and filters.
+                            This project showcases my full stack development skills and my ability to collaborate
+                            on a software team to deliver a functional, data-driven application.
+                        </p>
+                        <div class="demo-link">
+                            <a href="https://risk-radar-frontend.vercel.app/" class="project__demo" target="_blank">
+                                Working Demo <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                        <div class="project__img-grid">
+                            
+                            <div class="project-img-container">
+                                <div class="project-img-group-sm">
+                                    <img src="../assets/img/risk-score.png" class="project__img-two" alt="Home Page">
+                                    <p class="project__img-des">Score Page</p>
+                                </div>
+                                <div class="project-img-group-sm">
+                                    <img src="../assets/img/risk-data.png" class="project__img-two" alt="Demo">
+                                    <p class="project__img-des">Weather Disaster Data</p>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
 
                 <!--==================== Search Engine ====================-->
 
-                <div class="all__projects-description hidden" id="description">
+                <div class="all__projects-description hidden2" id="description2">
                     <div class="project__container-p">
                         <h2 class="section__title-project">Search Engine</h2>
-                        <span class="section__subtitle-project">Python Flask HTML CSS SQL</span>
+                        <span class="section__subtitle-project">Python • Flask • HTML • CSS • SQL</span>
                         <p class="project__description">As the capstone project for a web systems class I was tasked with building
                             a scalable search engine similar to Google or Bing. The project involved developing a segmented inverted index using MapReduce,
                             which efficiently processes and indexes a subset of Wikipedia pages. I also designed and implemented an index server with a REST API
@@ -171,10 +207,10 @@
 
                 <!--==================== Instagram Clone ====================-->
 
-                <div class="all__projects-description hidden2" id="description2">
+                <div class="all__projects-description hidden3" id="description3">
                     <div class="project__container-p">
                         <h2 class="section__title-project">Instagram Clone</h2>
-                        <span class="section__subtitle-project">Python Javascript React Flask HTML CSS SQL</span>
+                        <span class="section__subtitle-project">Python • Javascript • React • Flask • HTML • CSS • SQL</span>
                         <p class="project__description">In a multi-faceted project, I developed an Instagram clone that encompasses both server-side
                             and client-side dynamic pages, each with distinct implementations. Initially, I built an interactive
                             website using server-side dynamic pages, focusing on CRUD operations, sessions, and SQL database interactions. 
@@ -205,12 +241,35 @@
                     </div>
                 </div>
 
+                <div class="thumbnail-container">
+                    <div class="thumbnail-grid">
+                        <div class="thumbnail" id="plus4">
+                            <p class="all__projects-info">Running Weather Calculator</p>
+                            <div class="thumbnail-image">
+                                <img src="../assets/img/weather-thumb.png" alt="sql thumbnail">
+                            </div>
+                        </div>
+                        <div class="thumbnail" id="plus5">
+                            <p class="all__projects-info">AR Menu App</p>
+                            <div class="thumbnail-image">
+                                <img src="../assets/img/ar-demo.png" alt="ar menu thumbnail">
+                            </div>
+                        </div>
+                        <div class="thumbnail" id="plus6">
+                            <p class="all__projects-info">Restaurant Website</p>
+                            <div class="thumbnail-image">
+                                <img src="../assets/img/LLR-thumb.png" alt="little lemon thumbnail">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!--==================== Running Weather Calculator ====================-->
 
-                <div class="all__projects-description hidden3" id="description3">
+                <div class="all__projects-description hidden4" id="description4">
                     <div class="project__container-p">
                         <h2 class="section__title-project">Running Weather Calculator</h2>
-                        <span class="section__subtitle-project">JavaScript HTML CSS</span>
+                        <span class="section__subtitle-project">JavaScript • HTML • CSS</span>
                         <p class="project__description">In a recent project, I developed an app that calculates an adjusted running pace
                         based on real-time weather conditions in a given location. Built using JavaScript, CSS, and HTML, the app integrates with the
                         OpenWeather API to retrieve current weather data. This project allowed me to explore API integration and 
@@ -229,32 +288,9 @@
                     </div>
                 </div>
 
-                <div class="thumbnail-container">
-                    <div class="thumbnail-grid">
-                        <div class="thumbnail" id="plus4">
-                            <p class="all__projects-info">AR Menu App</p>
-                            <div class="thumbnail-image">
-                                <img src="../assets/img/ar-demo.png" alt="ar menu thumbnail">
-                            </div>
-                        </div>
-                        <div class="thumbnail" id="plus5">
-                            <p class="all__projects-info">Restaurant Website</p>
-                            <div class="thumbnail-image">
-                                <img src="../assets/img/LLR-thumb.png" alt="little lemon thumbnail">
-                            </div>
-                        </div>
-                        <div class="thumbnail" id="plus6">
-                            <p class="all__projects-info">Custom SQL Tool</p>
-                            <div class="thumbnail-image">
-                                <img src="../assets/img/sql-thumb.png" alt="sql thumbnail">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!--==================== AR Menu ====================-->
 
-                <div class="all__projects-description hidden4" id="description4">
+                <div class="all__projects-description hidden5" id="description5">
                     <div class="project__container-p">
                         <h2 class="section__title-project">Augmented Reality Menu</h2>
                         <span class="section__subtitle-project">C#</span>
@@ -290,10 +326,10 @@
                 </div>
                 
                 <!--==================== Little Lemon Website ====================-->
-                <div class="all__projects-description hidden5" id="description5">
+                <div class="all__projects-description hidden6" id="description6">
                     <div class="project__container-p">
                         <h2 class="section__title-project">Restaurant Website</h2>
-                        <span class="section__subtitle-project">HTML CSS Javascript React</span>
+                        <span class="section__subtitle-project">HTML • CSS • Javascript • React</span>
                         <p class="project__description">As the culmination of the Meta Front-End Developer course on Coursera,
                             I completed a professional capstone project. Utilizing the React library, 
                             I developed a dynamic single-page web application for a fictional restaurant.
@@ -316,30 +352,6 @@
                         </div>
                     </div>
                 </div>
-
-
-                <!--==================== Custom SQL ====================-->
-
-                <div class="all__projects-description hidden6" id="description6">
-                    <div class="project__container-p">
-                        <h2 class="section__title-project">Custom SQL</h2>
-                        <span class="section__subtitle-project">C++ </span>
-                        <p class="project__description">As a part of a data structures and algorithms class, I developed a SQL-based database managment terminal tool using C++.
-                            I implemented essential SQL functionalities, including Create, Insert, Join, Remove, Print, and Create Index with command-line options for extra functionality such as sorting.
-                            I utilized hash tables to optimize data retrieval and to enable flexible sorting and filtering, resulting in faster query execution and improved performance compared to other methods.
-                            I designed a user friendly command line interface with clear instructions, feedback, and error checking. 
-                            This project showcases my understanding of data structures and ability to implement efficient algorithms.
-                        </p>
-                        <div class="project__img-grid">
-                            
-                            <div class="project-img-group">
-                                <img src="assets/img/SQLdemo.png" class="project__img-norounding" alt="">
-                                <p class="project__img-des">Demo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </section>
 
             <!--==================== SKILLS ====================-->
