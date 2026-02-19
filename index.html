@@ -1,616 +1,960 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <!--==================== META TAGS ====================-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <meta name="HandheldFriendly" content="True" />
-        <meta name="language" content="EN" />
-        <meta name="robots" content="index,follow" />
-        <meta name="author" content="Bennett Zink" />
-
-        <!--Open graph Protocol-->
-        <meta property="og:title" content="Bennett Zink Portfolio" />
-        <meta name="og:site_name" content="Bennett Zink" />
-        <meta property="og:type" content="website" />
-        <meta name="og:locale" content="en_US" />
-        <meta name="og:country-name" content="USA" />
-
-        <meta name="apple-mobile-web-app-title" content="Bennett Zink Portfolio" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-
-        <meta property="og:image" content="" />
-        <link rel="icon" href="" />
-        <link rel="apple-touch-icon" href="" />
-        <link rel="icon" type="image/x-icon" href="" />
-
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>Bennett Zink</title>
-
-        <script type="text/javascript" src="../assets/js/processing.js"></script>
-    </head>
-
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Bennett Zink</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Projects
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="../assets/img/Bennett_Zink_Resume.pdf" class="nav__link" target="_blank">
-                                <i class="uil uil-message nav__icon"></i> Resume
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
-
-                <div class="nav__btns">
-                    <!-- Theme Change Button -->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-            
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/bennett-zink/" class="home__social-icon" target="_blank">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-                            <a href="https://github.com/bennett-zink" class="home__social-icon" target="_blank">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                        </div>
-
-                        <div class="home__data">
-                            <h1 class="home__title">Bennett Zink</h1>
-                            <!-- <div class="border-box"></div> -->
-                        </div>
-
-
-                    </div>
-
-                    <div class="home__scroll">
-                        <a href="#portfolio" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home_scroll-name">Scroll Down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
-                    <!-- Fix -->
-                    <p></p>
-
-                </div>
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="section portfolio all__projects" id="portfolio">
-                <h2 class="section__title">Projects</h2>
-                <span class="section__subtitle">Most Recent Work</span>
-                
-                <div class="thumbnail-container">
-                    <div class="thumbnail-grid">
-                        <div class="thumbnail" id="plus">
-                            <p class="all__projects-info">Hazard Dashboard</p>
-                            <div class="thumbnail-image">
-                                <img src="../assets/img/risk-thumb.png" alt="Thumbnail 3">
-                            </div>
-                        </div>
-                        <div class="thumbnail" id="plus2">
-                            <p class="all__projects-info">Search Engine</p>
-                            <div class="thumbnail-image">
-                                <img src="../assets/img/se-thumb2.png" alt="search engine thumbnail">
-                            </div>
-                        </div>
-                        <div class="thumbnail" id="plus3">
-                            <p class="all__projects-info">Instagram Clone</p>
-                            <div class="thumbnail-image">
-                                <img src="../assets/img/insta-thumb2.png" alt="Thumbnail 2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== Hazard Dashboard ====================-->
-
-                <div class="all__projects-description hidden" id="description">
-                    <div class="project__container-p">
-                        <h2 class="section__title-project">Hazard Dashboard</h2>
-                        <span class="section__subtitle-project">React • Tailwind CSS • Python • SQL</span>
-                        <p class="project__description">As the capstone for a human centered design course I worked with a team to develop a
-                            risk dashboard that visualizes disaster, crime, and weather data for U.S. counties by integrating real-time and historical data
-                            from sources like OpenFEMA, the FBI, and the NWS. I built a backend REST API to aggregate and serve data,
-                            and a responsive React frontend that displays interactive maps, charts, and filters.
-                            This project showcases my full stack development skills and my ability to collaborate
-                            on a software team to deliver a functional, data-driven application.
-                        </p>
-                        <div class="demo-link">
-                            <a href="https://risk-radar-frontend.vercel.app/" class="project__demo" target="_blank">
-                                Working Demo <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                        <div class="project__img-grid">
-                            
-                            <div class="project-img-container">
-                                <div class="project-img-group-sm">
-                                    <img src="../assets/img/risk-score.png" class="project__img-two" alt="Home Page">
-                                    <p class="project__img-des">Score Page</p>
-                                </div>
-                                <div class="project-img-group-sm">
-                                    <img src="../assets/img/risk-data.png" class="project__img-two" alt="Demo">
-                                    <p class="project__img-des">Weather Disaster Data</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== Search Engine ====================-->
-
-                <div class="all__projects-description hidden2" id="description2">
-                    <div class="project__container-p">
-                        <h2 class="section__title-project">Search Engine</h2>
-                        <span class="section__subtitle-project">Python • Flask • HTML • CSS • SQL</span>
-                        <p class="project__description">As the capstone project for a web systems class I was tasked with building
-                            a scalable search engine similar to Google or Bing. The project involved developing a segmented inverted index using MapReduce,
-                            which efficiently processes and indexes a subset of Wikipedia pages. I also designed and implemented an index server with a REST API
-                            to deliver search results in JSON format and a search server that provides a user interface similar to major search engines.
-                            To ensure efficient performance and scalability, I utilized asynchronous programming,
-                            enabling the servers to run on different threads and handle multiple requests concurrently. 
-                            This project showcases my ability to architect and scale complex systems using a Service-Oriented Architecture.
-                        <div class="demo-link">
-                            <a href="https://youtu.be/9c3R5OHH3g4" class="project__demo" target="_blank">
-                                Video Demo <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                        <div class="project__img-grid">
-                            
-                            <div class="project-img-group-">
-                                <img src="assets/img/search-engine-img.png" class="project__img" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== Instagram Clone ====================-->
-
-                <div class="all__projects-description hidden3" id="description3">
-                    <div class="project__container-p">
-                        <h2 class="section__title-project">Instagram Clone</h2>
-                        <span class="section__subtitle-project">Python • Javascript • React • Flask • HTML • CSS • SQL</span>
-                        <p class="project__description">In a multi-faceted project, I developed an Instagram clone that encompasses both server-side
-                            and client-side dynamic pages, each with distinct implementations. Initially, I built an interactive
-                            website using server-side dynamic pages, focusing on CRUD operations, sessions, and SQL database interactions. 
-                            This involved rendering pages on-demand and managing user interactions such as creating, updating, and deleting posts, comments, and likes.
-                            Building on this foundation, I then refactored portions of the server-side code into a REST API,
-                            creating a client-side application in JavaScript using React. This client-side app
-                            dynamically interacts with the server via asynchronous AJAX calls to the REST API,
-                            showcasing my skills in JavaScript programming and modern web development practices.
-                        <div class="demo-link">
-                            <a href="https://youtu.be/F6nStAIEffA" class="project__demo" target="_blank">
-                                Video Demo<i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                        <div class="project__img-grid">
-                            
-                            <div class="project-img-container">
-                                <div class="project-img-group-sm">
-                                    <img src="../assets/img/insta-thumb2.png" class="project__img-two" alt="Home Page">
-                                    <p class="project__img-des">Homepage</p>
-                                </div>
-                                <div class="project-img-group-sm">
-                                    <img src="../assets/img/insta2.png" class="project__img-two" alt="Demo">
-                                    <p class="project__img-des">Profile Page</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="thumbnail-container">
-                    <div class="thumbnail-grid">
-                        <div class="thumbnail" id="plus4">
-                            <p class="all__projects-info">Running Weather Calculator</p>
-                            <div class="thumbnail-image">
-                                <img src="../assets/img/weather-thumb.png" alt="sql thumbnail">
-                            </div>
-                        </div>
-                        <div class="thumbnail" id="plus5">
-                            <p class="all__projects-info">AR Menu App</p>
-                            <div class="thumbnail-image">
-                                <img src="../assets/img/ar-demo.png" alt="ar menu thumbnail">
-                            </div>
-                        </div>
-                        <div class="thumbnail" id="plus6">
-                            <p class="all__projects-info">Restaurant Website</p>
-                            <div class="thumbnail-image">
-                                <img src="../assets/img/LLR-thumb.png" alt="little lemon thumbnail">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== Running Weather Calculator ====================-->
-
-                <div class="all__projects-description hidden4" id="description4">
-                    <div class="project__container-p">
-                        <h2 class="section__title-project">Running Weather Calculator</h2>
-                        <span class="section__subtitle-project">JavaScript • HTML • CSS</span>
-                        <p class="project__description">In a recent project, I developed an app that calculates an adjusted running pace
-                        based on real-time weather conditions in a given location. Built using JavaScript, CSS, and HTML, the app integrates with the
-                        OpenWeather API to retrieve current weather data. This project allowed me to explore API integration and 
-                        served as a practical exercise in using external data sources in web applications.
-                        <div class="demo-link">
-                            <a href="https://bennett-zink.github.io/weather-running-app/" class="project__demo" target="_blank">
-                                Working Demo<i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                        <div class="project__img-grid">
-                            
-                            <div class="project-img-group-">
-                                <img src="assets/img/weather-img.png" class="project__img" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== AR Menu ====================-->
-
-                <div class="all__projects-description hidden5" id="description5">
-                    <div class="project__container-p">
-                        <h2 class="section__title-project">Augmented Reality Menu</h2>
-                        <span class="section__subtitle-project">C#</span>
-                        <p class="project__description">As the capstone project for an Extended Reality elective course,
-                            I conceptualized and developed an innovative XR application aimed at revolutionizing
-                            the dining experience in restaurants. Leveraging the Unity game engine,
-                            I designed a prototype interface with a familiar online ordering layout.
-                            The unique feature of this app lies in its integration of augmented reality,
-                            allowing users to visualize each menu item in 3D before placing an order.
-                            This project not only displays my proficiency in crafting engaging and user-friendly applications
-                            but also emphasizes my adeptness at rapidly acquiring
-                            new skills and navigating various technologies and software platforms. 
-                        <div class="demo-link">
-                            <a href="https://youtube.com/shorts/u2lGsDy5LEY?feature=share" class="project__demo" target="_blank">
-                                Video Demo <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                        <div class="project__img-grid">
-                            
-                            <div class="project-img-container">
-                                <div class="project-img-group-sm">
-                                    <img src="../assets/img/menu.png" class="project__img-two" alt="Home Page">
-                                    <p class="project__img-des">Homepage</p>
-                                </div>
-                                <div class="project-img-group-sm">
-                                    <img src="../assets/img/demo.png" class="project__img-two" alt="Demo">
-                                    <p class="project__img-des">Demo</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                
-                <!--==================== Little Lemon Website ====================-->
-                <div class="all__projects-description hidden6" id="description6">
-                    <div class="project__container-p">
-                        <h2 class="section__title-project">Restaurant Website</h2>
-                        <span class="section__subtitle-project">HTML • CSS • Javascript • React</span>
-                        <p class="project__description">As the culmination of the Meta Front-End Developer course on Coursera,
-                            I completed a professional capstone project. Utilizing the React library, 
-                            I developed a dynamic single-page web application for a fictional restaurant.
-                            To enhance the website's functionality, I integrated various APIs to create a seamless reservation form and write unit tests.
-                            My project demonstrates proficiency in modern front-end development and showcases my ability to create engaging and user-friendly web applications.
-                        </p>
-                        <!---->
-                        <div class="demo-link">
-                            <a href="https://meta-capstone-project.netlify.app/" class="project__demo" target="_blank">
-                                Working Demo <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                        <div class="project__img-grid">
-                            
-                            <div class="project-img-group">
-                                <img src="assets/img/LLR-prototype.png" class="project__img" alt="">
-                                <p class="project__img-des">Mock-up of the homepage made in Figma</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle"></span>
-
-                <div class="skills__container container grid">
-                    <div>
-                        <!--SKILL 1-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-desktop skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Programming Languages</h1>
-                                    <span class="skills__subtitle"></span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/cpp.png">
-                                    <span class="skill-name">C++</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/c.png">
-                                    <span class="skill-name">C</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/python.png">
-                                    <span class="skill-name">Python</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/ts.png">
-                                    <span class="skill-name">Typescript</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/js.png">
-                                    <span class="skill-name">Javascript</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--SKILL 2-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
-
-                                <div>
-                                    <h1 class="skills__title">Frontend</h1>
-                                    <span class="skills__subtitle"></span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/react.svg">
-                                    <span class="skill-name">React</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/bs.png">
-                                    <span class="skill-name">Bootstrap</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/tw.png">
-                                    <span class="skill-name">Tailwind CSS</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/flask.webp">
-                                    <span class="skill-name">Flask</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!--SKILL 3-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-database skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Database Technologies</h1>
-                                    <span class="skills__subtitle"></span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/sql.png">
-                                    <span class="skill-name">SQL</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/mdb.svg">
-                                    <span class="skill-name">MongoDB</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/pg.png">
-                                    <span class="skill-name">PostgreSQL</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!--SKILL 4-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-code-branch skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Version Control & Devops</h1>
-                                    <span class="skills__subtitle"></span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/git.png">
-                                    <span class="skill-name">Git</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/github.png">
-                                    <span class="skill-name">Github</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/docker.png">
-                                    <span class="skill-name">Docker</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/ul.png">
-                                    <span class="skill-name">Ubuntu</span>
-                                </div>
-                                <div class="skill">
-                                    <img src="./assets/img/tech-logos/mac.png">
-                                    <span class="skill-name">Mac OS</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Get in touch</span>
-
-                <div class="contact__container container grid">
-                    <div class="contact__align">
-                        <div class="contact__information">
-                            <i class="uil uil-phone contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Call Me</h3>
-                                <span class="contact__subtitle">616-307-3809</span>
-                            </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Email Me</h3>
-                                <span class="contact__subtitle">bennettezink@gmail.com</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!--FORM-->
-                    <form action="https://formsubmit.co/bennettezink@gmail.com" method="POST">
-                        <div class="contact__form grid">
-                            <div class="contact__inputs grid">
-                                <div class="contact__content">
-                                    <label for="" class="contact__label">Name</label>
-                                    <input type="text" class="contact__input" name="name" required>
-                                </div>
-                                <div class="contact__content">
-                                    <label for="" class="contact__label">Email</label>
-                                    <input type="email" class="contact__input" name="email" required>
-                                </div>
-                            </div>
-
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Message</label>
-                                <textarea name="message" cols="0" rows="7" class="contact__input" required></textarea>
-                            </div>
-
-                            <div>
-                                <button type="submit" class="button button--flex submit-button">
-                                    Send Message <i class="uil uil-message button__icon"></i>
-                                </button>
-                            </div>
-
-                            <input type="hidden" name="_next" value="https://bennettzink.com/#contact">
-
-                        </div>
-                    </form>
-
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div class="footer__title-c">
-                    <h1 class="footer__title">Bennett</h1>
-                    <h1 class="footer__title">Zink</h1>
-                </div>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#home" class="footer__link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="footer__socials">
-                    <a href="https://www.linkedin.com/in/bennett-zink/" class="footer__social" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-
-                    <a href="https://github.com/bennett-zink" class="footer__social" target="_blank">
-                        <i class="uil uil-github-alt"></i>
-                    </a>
-                </div>
-            </div>
-
-            <p class="footer__copy">&#169; Bennett Zink. All rights reserved</p>
-         </div>
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        <a href="" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bennett Zink — Data Engineer">
+  <title>Bennett Zink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─────────────────────────────────────
+       BASE
+    ───────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    :root {
+      --white: #ffffff;
+      --off: #f8f8f6;
+      --ink: #111111;
+      --mid: #666666;
+      --light: #bbbbbb;
+      --rule: #e8e8e8;
+      --accent: #111111;
+      --blur-color: rgba(0,0,0,0.04);
+      --sans: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    html, body { height: 100%; }
+
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.5;
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--ink); color: var(--white); }
+
+    /* ─────────────────────────────────────
+       CURSOR
+    ───────────────────────────────────── */
+    #c-dot {
+      position: fixed;
+      width: 8px; height: 8px;
+      background: var(--ink);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%,-50%);
+      transition: width .25s, height .25s, opacity .25s;
+    }
+    #c-ring {
+      position: fixed;
+      width: 36px; height: 36px;
+      border: 1px solid rgba(17,17,17,.35);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%,-50%);
+      transition: width .4s cubic-bezier(.25,.46,.45,.94),
+                  height .4s cubic-bezier(.25,.46,.45,.94),
+                  opacity .3s, border-color .3s;
+    }
+    body.on-link #c-dot  { width: 4px; height: 4px; opacity: .5; }
+    body.on-link #c-ring { width: 56px; height: 56px; opacity: .15; }
+
+    /* ─────────────────────────────────────
+       PRELOADER
+    ───────────────────────────────────── */
+    #preloader {
+      position: fixed; inset: 0;
+      background: var(--white);
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 3rem;
+    }
+    #pl-name {
+      font-size: clamp(3.5rem,9vw,8rem);
+      font-weight: 300;
+      letter-spacing: -.04em;
+      line-height: 1;
+      overflow: hidden;
+    }
+    #pl-name .w {
+      display: block;
+      transform: translateY(110%);
+      transition: transform .9s cubic-bezier(.76,0,.24,1);
+    }
+    #pl-role {
+      font-size: .75rem;
+      font-weight: 400;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-top: 1rem;
+      opacity: 0;
+      transition: opacity .6s .6s;
+    }
+    #pl-bar {
+      position: absolute;
+      bottom: 0; left: 0;
+      height: 2px;
+      width: 0%;
+      background: var(--ink);
+      transition: width .05s linear;
+    }
+
+    /* ─────────────────────────────────────
+       NAV
+    ───────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.75rem 2.5rem;
+      mix-blend-mode: multiply;
+    }
+    .nav-logo {
+      font-size: .75rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .nav-right {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .nav-right a {
+      font-size: .72rem;
+      font-weight: 400;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: color .2s;
+      position: relative;
+    }
+    .nav-right a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0;
+      width: 0; height: 1px;
+      background: var(--ink);
+      transition: width .3s;
+    }
+    .nav-right a:hover { color: var(--ink); }
+    .nav-right a:hover::after { width: 100%; }
+
+    /* hamburger */
+    .hbg {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none; border: none; cursor: none;
+      padding: 4px;
+    }
+    .hbg span { display: block; width: 20px; height: 1px; background: var(--ink); }
+    #mobile-nav {
+      display: none;
+      position: fixed; inset: 0;
+      background: var(--white);
+      z-index: 200;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem;
+      gap: .5rem;
+    }
+    #mobile-nav.open { display: flex; }
+    #mobile-nav a {
+      font-size: clamp(2rem,7vw,3.5rem);
+      font-weight: 300;
+      letter-spacing: -.03em;
+      color: var(--ink);
+      line-height: 1.1;
+      transition: opacity .2s;
+    }
+    #mobile-nav a:hover { opacity: .4; }
+    .mnav-close {
+      position: absolute; top: 1.75rem; right: 2.5rem;
+      font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--mid); background: none; border: none; cursor: none;
+    }
+
+    /* ─────────────────────────────────────
+       HERO
+    ───────────────────────────────────── */
+    #home {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 2.5rem 4rem;
+      position: relative;
+    }
+
+    .hero-index {
+      position: absolute;
+      top: 50%;
+      right: 2.5rem;
+      transform: translateY(-50%);
+      font-size: .65rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--light);
+      writing-mode: vertical-lr;
+    }
+
+    .hero-tag {
+      font-size: .7rem;
+      font-weight: 400;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    .hero-headline {
+      font-size: clamp(4rem, 11vw, 13rem);
+      font-weight: 300;
+      letter-spacing: -.05em;
+      line-height: .92;
+      color: var(--ink);
+      margin-bottom: 4rem;
+    }
+    .hl-wrap { overflow: hidden; display: block; }
+    .hl { display: block; transform: translateY(110%); }
+
+    .hero-foot {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    .hero-desc {
+      font-size: .88rem;
+      font-weight: 300;
+      color: var(--mid);
+      max-width: 340px;
+      line-height: 1.75;
+    }
+    .hero-cta {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .cta-link {
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink);
+      position: relative;
+    }
+    .cta-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0;
+      width: 100%; height: 1px;
+      background: var(--ink);
+      transform-origin: right;
+      transform: scaleX(1);
+      transition: transform .35s cubic-bezier(.25,.46,.45,.94);
+    }
+    .cta-link:hover::after { transform: scaleX(0); transform-origin: left; }
+    .cta-ghost {
+      font-size: .72rem;
+      font-weight: 400;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: color .2s;
+    }
+    .cta-ghost:hover { color: var(--ink); }
+
+    /* ─────────────────────────────────────
+       MARQUEE
+    ───────────────────────────────────── */
+    .marquee-wrap {
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      overflow: hidden;
+      padding: .9rem 0;
+      background: var(--off);
+    }
+    .marquee-inner {
+      display: flex;
+      width: max-content;
+      animation: mq 30s linear infinite;
+    }
+    .marquee-inner:hover { animation-play-state: paused; }
+    @keyframes mq { to { transform: translateX(-50%); } }
+    .mq-item {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 0 2rem;
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--mid);
+      white-space: nowrap;
+      transition: color .2s;
+    }
+    .mq-item:hover { color: var(--ink); }
+    .mq-sep { width: 3px; height: 3px; background: var(--ink); border-radius: 50%; opacity: .3; }
+
+    /* ─────────────────────────────────────
+       SECTION SHARED
+    ───────────────────────────────────── */
+    .section {
+      padding: 6rem 2.5rem;
+      border-top: 1px solid var(--rule);
+    }
+    .s-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+    }
+    .s-label {
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .s-index {
+      font-size: .65rem;
+      font-weight: 400;
+      letter-spacing: .12em;
+      color: var(--light);
+    }
+    .s-title {
+      font-size: clamp(2.2rem,5vw,5.5rem);
+      font-weight: 300;
+      letter-spacing: -.04em;
+      line-height: .95;
+      color: var(--ink);
+    }
+
+    /* ─────────────────────────────────────
+       ABOUT
+    ───────────────────────────────────── */
+    #about .inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+    .about-text p {
+      font-size: .92rem;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+    .about-text p strong { color: var(--ink); font-weight: 500; }
+    .about-list { list-style: none; margin-top: 2.5rem; }
+    .about-list li {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--rule);
+      font-size: .82rem;
+      font-weight: 400;
+      color: var(--ink);
+      transition: color .2s;
+    }
+    .about-list li:last-child { border-bottom: 1px solid var(--rule); }
+    .li-num { font-size: .6rem; letter-spacing: .12em; color: var(--light); min-width: 28px; }
+    .li-sub { display: block; font-size: .72rem; color: var(--mid); margin-top: .15rem; font-weight: 300; }
+
+    /* ─────────────────────────────────────
+       SKILLS — hover blur reveal
+    ───────────────────────────────────── */
+    #skills .s-title { margin-bottom: 0; }
+
+    .skills-list {
+      margin-top: 0;
+    }
+    .skill-row {
+      display: grid;
+      grid-template-columns: 3.5rem 1fr 1fr;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1.1rem 0;
+      border-top: 1px solid var(--rule);
+      cursor: none;
+      position: relative;
+      transition: background .2s;
+    }
+    .skill-row:last-child { border-bottom: 1px solid var(--rule); }
+    .skill-row:hover { background: var(--off); }
+    .sk-num { font-size: .6rem; letter-spacing: .12em; color: var(--light); }
+    .sk-name {
+      font-size: clamp(.85rem,1.8vw,1.2rem);
+      font-weight: 300;
+      letter-spacing: -.02em;
+      color: var(--ink);
+      transition: opacity .2s;
+    }
+    .sk-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+      justify-content: flex-end;
+    }
+    .sk-tag {
+      font-size: .62rem;
+      font-weight: 400;
+      letter-spacing: .07em;
+      color: var(--mid);
+      border: 1px solid var(--rule);
+      padding: .22rem .6rem;
+      border-radius: 100px;
+      transition: border-color .2s, color .2s;
+    }
+    .skill-row:hover .sk-tag { border-color: #ccc; color: var(--ink); }
+
+    /* hover preview blur image using a pseudo element */
+    .skill-row::after {
+      content: attr(data-label);
+      position: absolute;
+      right: 0; top: 50%;
+      transform: translateY(-50%) translateX(20px);
+      font-size: 4rem;
+      font-weight: 300;
+      letter-spacing: -.05em;
+      color: rgba(17,17,17,.05);
+      pointer-events: none;
+      opacity: 0;
+      filter: blur(4px);
+      transition: opacity .4s, transform .4s cubic-bezier(.25,.46,.45,.94), filter .4s;
+      white-space: nowrap;
+    }
+    .skill-row:hover::after {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0);
+      filter: blur(0px);
+    }
+
+    /* ─────────────────────────────────────
+       CONTACT
+    ───────────────────────────────────── */
+    #contact .inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8rem;
+      align-items: start;
+    }
+    .contact-blurb {
+      font-size: .92rem;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.85;
+      margin-bottom: 3rem;
+    }
+    .contact-links { display: flex; flex-direction: column; }
+    .cl-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 0;
+      border-top: 1px solid var(--rule);
+      transition: opacity .2s;
+    }
+    .cl-row:last-child { border-bottom: 1px solid var(--rule); }
+    .cl-row:hover { opacity: .5; }
+    .cl-label { font-size: .6rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--mid); }
+    .cl-val { font-size: .88rem; font-weight: 300; color: var(--ink); }
+    .cl-arrow { font-size: .9rem; color: var(--light); transition: transform .3s, color .3s; }
+    .cl-row:hover .cl-arrow { transform: translate(4px,-4px); color: var(--ink); }
+
+    /* form */
+    .contact-form {}
+    .fg {
+      margin-bottom: 1.5rem;
+    }
+    .fg label {
+      display: block;
+      font-size: .6rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: .5rem;
+    }
+    .fg input, .fg textarea {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--rule);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: .88rem;
+      font-weight: 300;
+      padding: .6rem 0;
+      outline: none;
+      transition: border-color .25s;
+      resize: none;
+    }
+    .fg input::placeholder, .fg textarea::placeholder { color: var(--light); }
+    .fg input:focus, .fg textarea:focus { border-color: var(--ink); }
+    .fg textarea { min-height: 110px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .submit-btn {
+      margin-top: .5rem;
+      font-family: var(--sans);
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--ink);
+      border: 1px solid var(--ink);
+      padding: .85rem 2rem;
+      cursor: none;
+      transition: background .25s, color .25s;
+    }
+    .submit-btn:hover { background: transparent; color: var(--ink); }
+
+    /* ─────────────────────────────────────
+       FOOTER
+    ───────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 2rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .f-logo { font-size: .72rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+    .f-links { display: flex; gap: 2rem; }
+    .f-links a { font-size: .68rem; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; color: var(--mid); transition: color .2s; }
+    .f-links a:hover { color: var(--ink); }
+    .f-copy { font-size: .65rem; color: var(--light); }
+
+    /* ─────────────────────────────────────
+       SCROLL UP
+    ───────────────────────────────────── */
+    #scroll-up {
+      position: fixed; bottom: 2rem; right: 2.5rem;
+      font-size: .65rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--mid); display: none; z-index: 50;
+      transition: color .2s;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2px;
+    }
+    #scroll-up.show { display: block; }
+    #scroll-up:hover { color: var(--ink); }
+
+    /* ─────────────────────────────────────
+       REVEAL
+    ───────────────────────────────────── */
+    .rv {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .85s cubic-bezier(.25,.46,.45,.94),
+                  transform .85s cubic-bezier(.25,.46,.45,.94);
+    }
+    .rv.on { opacity: 1; transform: none; }
+    .d1 { transition-delay: .1s; }
+    .d2 { transition-delay: .22s; }
+    .d3 { transition-delay: .36s; }
+
+    /* ─────────────────────────────────────
+       MAGNETIC
+    ───────────────────────────────────── */
+    .mag { display: inline-block; }
+
+    /* ─────────────────────────────────────
+       RESPONSIVE
+    ───────────────────────────────────── */
+    @media (max-width: 900px) {
+      nav { padding: 1.5rem 1.75rem; }
+      .nav-right { display: none; }
+      .hbg { display: flex; }
+      #home { padding: 0 1.75rem 4rem; }
+      .section { padding: 4rem 1.75rem; }
+      #about .inner { grid-template-columns: 1fr; gap: 3rem; }
+      #contact .inner { grid-template-columns: 1fr; gap: 3rem; }
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+      footer { flex-direction: column; gap: 1.25rem; padding: 1.75rem; }
+      .f-links { flex-wrap: wrap; }
+      .hero-foot { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+      .skill-row { grid-template-columns: 2.5rem 1fr; }
+      .sk-tags { display: none; }
+      .hero-index { display: none; }
+      body { cursor: auto; }
+      #c-dot, #c-ring { display: none; }
+      #scroll-up { right: 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="c-dot"></div>
+<div id="c-ring"></div>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div id="pl-name">
+    <span class="w" id="pl-w1">Bennett</span>
+    <span class="w" id="pl-w2">Zink.</span>
+  </div>
+  <div id="pl-role">Data Engineer</div>
+  <div id="pl-bar"></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#home" class="nav-logo">Bennett Zink</a>
+  <div class="nav-right">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/Bennett_Zink_Resume.pdf" target="_blank">Resume ↗</a>
+  </div>
+  <button class="hbg" id="hbg" aria-label="Menu">
+    <span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobile-nav">
+  <button class="mnav-close" id="mnav-close">Close</button>
+  <a href="#about" class="ml">About</a>
+  <a href="#skills" class="ml">Skills</a>
+  <a href="#contact" class="ml">Contact</a>
+  <a href="assets/Bennett_Zink_Resume.pdf" target="_blank" class="ml">Resume</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-index">{01} Data Engineer</div>
+
+  <div class="hero-tag" id="htag">Data Engineer &nbsp;·&nbsp; Pipelines &nbsp;·&nbsp; Analytics &nbsp;·&nbsp; Business Intelligence</div>
+
+  <h1 class="hero-headline">
+    <span class="hl-wrap"><span class="hl" id="hl1">Building</span></span>
+    <span class="hl-wrap"><span class="hl" id="hl2">data that</span></span>
+    <span class="hl-wrap"><span class="hl" id="hl3">works.</span></span>
+  </h1>
+
+  <div class="hero-foot" id="hfoot">
+    <p class="hero-desc">I design and build the pipelines, models, and dashboards that turn raw data into reliable decisions.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="cta-link mag">Get in touch</a>
+      <a href="#skills" class="cta-ghost">Skills →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="s-header rv">
+    <span class="s-label">About</span>
+    <span class="s-index">{01}</span>
+  </div>
+  <div class="inner">
+    <div>
+      <div class="s-title rv">Who<br>I am.</div>
+      <!-- <ul class="about-list rv d1">
+        <li><span class="li-num">01</span><span><b>Pipeline Engineering</b><span class="li-sub">ETL/ELT · time-series · schema design · data quality</span></span></li>
+        <li><span class="li-num">02</span><span><b>Analytics & BI</b><span class="li-sub">Superset · Tableau · Power BI · metric definition</span></span></li>
+        <li><span class="li-num">03</span><span><b>Data Modeling</b><span class="li-sub">Snowflake · rolling-window · historical datasets</span></span></li>
+        <li><span class="li-num">04</span><span><b>Systems Thinking</b><span class="li-sub">Architecture · legacy migration · platform evaluation</span></span></li>
+      </ul> -->
+    </div>
+    <div class="about-text">
+      <p class="rv">I'm a <strong>data engineer</strong> who builds the systems that make analytics actually work. I currently work at a small startup, where I handle projects end to end from raw ingestion pipelines, transformation logic, Snowflake data models, and BI dashboards stakeholders rely on daily.</p>
+      <p class="rv d1">I've worked across ETL workflows, schema design, and legacy-to-modern migration planning. I write clean, documented code so the next person isn't starting from zero.</p>
+      <p class="rv d2">I operate with <strong>end-to-end ownership</strong>, comfortable working independently, communicating directly with non-technical stakeholders, and delivering work that's auditable and built to last.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="s-header rv">
+    <span class="s-label">Skills</span>
+    <span class="s-index">{02}</span>
+  </div>
+  <div class="s-title rv d1" style="margin-bottom:3.5rem;">What I <br>Can Do.</div>
+
+  <div class="skills-list">
+
+    <div class="skill-row rv" data-label="">
+      <span class="sk-num">01</span>
+      <span class="sk-name">Core Data Engineering</span>
+      <div class="sk-tags">
+        <span class="sk-tag">Python</span>
+        <span class="sk-tag">SQL</span>
+        <span class="sk-tag">ETL</span>
+        <span class="sk-tag">Pipelines</span>
+        <span class="sk-tag">Data Modeling</span>
+        <span class="sk-tag">Schema Design</span>
+        <span class="sk-tag">Data Quality</span>
+      </div>
+    </div>
+
+    <div class="skill-row rv d1" data-label="">
+      <span class="sk-num">02</span>
+      <span class="sk-name">Analytics & Business Intelligence</span>
+      <div class="sk-tags">
+        <span class="sk-tag">Apache Superset</span>
+        <span class="sk-tag">Tableau</span>
+        <span class="sk-tag">Power BI</span>
+        <span class="sk-tag">Dashboard Design</span>
+        <span class="sk-tag">Reporting QA</span>
+      </div>
+    </div>
+
+    <div class="skill-row rv d1" data-label="">
+      <span class="sk-num">03</span>
+      <span class="sk-name">Cloud, Platform & Infrastructure</span>
+      <div class="sk-tags">
+        <span class="sk-tag">Snowflake</span>
+        <span class="sk-tag">Azure</span>
+        <span class="sk-tag">Docker</span>
+        <span class="sk-tag">GitHub</span>
+        <span class="sk-tag">Cloudflare</span>
+      </div>
+    </div>
+
+    <div class="skill-row rv" data-label="">
+      <span class="sk-num">04</span>
+      <span class="sk-name">Data-Driven Web Applications</span>
+      <div class="sk-tags">
+        <span class="sk-tag">React</span>
+        <span class="sk-tag">TypeScript</span>
+        <span class="sk-tag">JavaScript</span>
+        <span class="sk-tag">APIs</span>
+        <span class="sk-tag">Client–Server Architecture</span>
+        <span class="sk-tag">Data Visualization</span>
+      </div>
+    </div>
+
+    <div class="skill-row rv d2" data-label="">
+      <span class="sk-num">05</span>
+      <span class="sk-name">AI & Automation</span>
+      <div class="sk-tags">
+        <span class="sk-tag">Chatbot Dev</span>
+        <span class="sk-tag">Prompt Engineering</span>
+        <span class="sk-tag">API Cost Optimization</span>
+        <span class="sk-tag">Workflow Integration</span>
+      </div>
+    </div>
+
+    <div class="skill-row rv d2" data-label="">
+      <span class="sk-num">06</span>
+      <span class="sk-name">Software Engineering Practices</span>
+      <div class="sk-tags">
+        <span class="sk-tag">Modular Design</span>
+        <span class="sk-tag">Code Reviews</span>
+        <span class="sk-tag">Testing</span>
+        <span class="sk-tag">Debugging</span>
+        <span class="sk-tag">Version Control</span>
+      </div>
+    </div>
+
+    <div class="skill-row rv d3" data-label="">
+      <span class="sk-num">07</span>
+      <span class="sk-name">Technical Communication</span>
+      <div class="sk-tags">
+        <span class="sk-tag">Requirements Gathering</span>
+        <span class="sk-tag">Clear Documentation</span>
+        <span class="sk-tag">Stakeholder Communication</span>
+        <span class="sk-tag">Technical Presentations</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="s-header rv">
+    <span class="s-label">Contact</span>
+    <span class="s-index">{03}</span>
+  </div>
+  <div class="inner">
+    <div>
+      <div class="s-title rv" style="margin-bottom:1.5rem;">Contact me.</div>
+      <p class="contact-blurb rv d1">Whether it’s a data project, a random idea, or just a conversation <br> I’m always happy to chat</p>
+      <div class="contact-links rv d2">
+        <div class="cl-row">
+          <div><div class="cl-label">Phone</div><div class="cl-val">616-307-3809</div></div>
+        </div>
+        <a href="mailto:bennettezink@gmail.com" class="cl-row">
+          <div><div class="cl-label">Email</div><div class="cl-val">bennettezink@gmail.com</div></div>
+          <span class="cl-arrow">↗</span>
         </a>
-        
+        <a href="https://www.linkedin.com/in/bennett-zink/" target="_blank" class="cl-row">
+          <div><div class="cl-label">LinkedIn</div><div class="cl-val">bennett-zink</div></div>
+          <span class="cl-arrow">↗</span>
+        </a>
+        <a href="https://github.com/bennett-zink" target="_blank" class="cl-row">
+          <div><div class="cl-label">GitHub</div><div class="cl-val">bennett-zink</div></div>
+          <span class="cl-arrow">↗</span>
+        </a>
+      </div>
+    </div>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <div class="contact-form rv d1">
+      <form action="https://formsubmit.co/bennettezink@gmail.com" method="POST">
+        <div class="form-row">
+          <div class="fg"><label>Name</label><input type="text" name="name" required placeholder="Your name"></div>
+          <div class="fg"><label>Email</label><input type="email" name="email" required placeholder="your@email.com"></div>
+        </div>
+        <div class="fg"><label>Message</label><textarea name="message" required placeholder="What are you working on?"></textarea></div>
+        <input type="hidden" name="_next" value="https://bennettzink.com/#contact">
+        <button type="submit" class="submit-btn mag">Send →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#home" class="f-logo">Bennett Zink</a>
+  <div class="f-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/bennett-zink" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/bennett-zink/" target="_blank">LinkedIn</a>
+  </div>
+  <span class="f-copy">© 2025 Bennett Zink</span>
+</footer>
+
+<a href="#home" id="scroll-up">↑ Top</a>
+
+<script>
+/* ── CURSOR ── */
+const dot  = document.getElementById('c-dot');
+const ring = document.getElementById('c-ring');
+let mx = innerWidth/2, my = innerHeight/2, rx = mx, ry = my;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  dot.style.left = mx+'px'; dot.style.top = my+'px';
+});
+(function loop() {
+  rx += (mx-rx)*.1; ry += (my-ry)*.1;
+  ring.style.left = rx+'px'; ring.style.top = ry+'px';
+  requestAnimationFrame(loop);
+})();
+document.querySelectorAll('a,button,.skill-row,.submit-btn').forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('on-link'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('on-link'));
+});
+
+/* ── PRELOADER ── */
+(function(){
+  const bar   = document.getElementById('pl-bar');
+  const role  = document.getElementById('pl-role');
+  const w1    = document.getElementById('pl-w1');
+  const w2    = document.getElementById('pl-w2');
+  const pl    = document.getElementById('preloader');
+
+  // staggered name letters up
+  setTimeout(() => { w1.style.transform = 'translateY(0)'; }, 120);
+  setTimeout(() => { w2.style.transform = 'translateY(0)'; }, 250);
+  setTimeout(() => { role.style.opacity = '1'; }, 500);
+
+  let p = 0;
+  const iv = setInterval(() => {
+    p += Math.random() * 13 + 2;
+    if (p > 100) p = 100;
+    bar.style.width = p + '%';
+    if (p === 100) {
+      clearInterval(iv);
+      setTimeout(() => {
+        pl.style.transition = 'transform .9s cubic-bezier(.76,0,.24,1)';
+        pl.style.transform  = 'translateY(-100%)';
+        setTimeout(() => { pl.style.display = 'none'; heroIn(); }, 950);
+      }, 300);
+    }
+  }, 55);
+})();
+
+/* ── HERO ENTRANCE ── */
+function heroIn() {
+  const ease = 'transform 1s cubic-bezier(.25,.46,.45,.94)';
+  [['hl1',0],['hl2',110],['hl3',220]].forEach(([id,d]) =>
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      el.style.transition = ease;
+      el.style.transform  = 'translateY(0)';
+    }, d)
+  );
+  setTimeout(() => {
+    const t = document.getElementById('htag');
+    t.style.transition = 'opacity .7s, transform .7s';
+    t.style.opacity = '1'; t.style.transform = 'none';
+  }, 350);
+  setTimeout(() => {
+    const f = document.getElementById('hfoot');
+    f.style.transition = 'opacity .8s, transform .8s';
+    f.style.opacity = '1'; f.style.transform = 'none';
+  }, 550);
+  setTimeout(() => {
+    document.getElementById('scroll-up'); // just warm up
+  }, 800);
+}
+
+/* ── NAV scroll compact ── */
+window.addEventListener('scroll', () => {
+  document.getElementById('scroll-up').classList.toggle('show', scrollY > 500);
+}, { passive: true });
+
+/* ── MOBILE MENU ── */
+document.getElementById('hbg').addEventListener('click', () => document.getElementById('mobile-nav').classList.add('open'));
+document.getElementById('mnav-close').addEventListener('click', () => document.getElementById('mobile-nav').classList.remove('open'));
+document.querySelectorAll('.ml').forEach(l => l.addEventListener('click', () => document.getElementById('mobile-nav').classList.remove('open')));
+
+/* ── SCROLL REVEAL ── */
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+}, { threshold: 0.07 });
+document.querySelectorAll('.rv').forEach(el => ro.observe(el));
+
+/* ── MAGNETIC ── */
+document.querySelectorAll('.mag').forEach(el => {
+  el.addEventListener('mousemove', e => {
+    const r  = el.getBoundingClientRect();
+    const dx = (e.clientX - r.left - r.width/2)  * .3;
+    const dy = (e.clientY - r.top  - r.height/2) * .3;
+    el.style.transition = 'transform .1s';
+    el.style.transform  = `translate(${dx}px,${dy}px)`;
+  });
+  el.addEventListener('mouseleave', () => {
+    el.style.transition = 'transform .55s cubic-bezier(.25,.46,.45,.94)';
+    el.style.transform  = '';
+  });
+});
+
+/* ── SKILL ROW hover blur text is pure CSS via ::after + data-label ── */
+/* Already handled in CSS above */
+</script>
+</body>
 </html>
